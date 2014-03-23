@@ -1207,21 +1207,22 @@ containing a value of this type.
         public static final int action_bar_root=0x7f07001d;
         public static final int action_bar_subtitle=0x7f070026;
         public static final int action_bar_title=0x7f070025;
-        public static final int action_check_update=0x7f07005d;
+        public static final int action_check_update=0x7f07005e;
         public static final int action_context_bar=0x7f070020;
-        public static final int action_forgot_password=0x7f07005e;
-        public static final int action_help=0x7f07005c;
+        public static final int action_forgot_password=0x7f07005f;
+        public static final int action_help=0x7f07005d;
         public static final int action_menu_divider=0x7f070019;
         public static final int action_menu_presenter=0x7f07001a;
         public static final int action_mode_close_button=0x7f070027;
-        public static final int action_refresh=0x7f07005b;
-        public static final int action_search=0x7f07005a;
-        public static final int action_settings=0x7f070059;
+        public static final int action_refresh=0x7f07005c;
+        public static final int action_search=0x7f07005b;
+        public static final int action_settings=0x7f07005a;
         public static final int activity_chooser_view_content=0x7f070028;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f070014;
         public static final int checkbox=0x7f070030;
         public static final int collapseActionView=0x7f070011;
+        public static final int container=0x7f070057;
         public static final int default_activity_button=0x7f07002b;
         public static final int dialog=0x7f070012;
         public static final int disableHome=0x7f07000c;
@@ -1238,7 +1239,7 @@ containing a value of this type.
         public static final int icon=0x7f07002d;
         public static final int ifRoom=0x7f07000e;
         public static final int image=0x7f07002a;
-        public static final int imgDisplay=0x7f070058;
+        public static final int imgDisplay=0x7f070059;
         public static final int latituderef=0x7f070053;
         public static final int latitudeview=0x7f070051;
         public static final int listMode=0x7f070005;
@@ -1272,7 +1273,7 @@ containing a value of this type.
         public static final int search_plate=0x7f070039;
         public static final int search_src_text=0x7f07003a;
         public static final int search_voice_btn=0x7f07003e;
-        public static final int section_label=0x7f070057;
+        public static final int section_label=0x7f070058;
         public static final int shortcut=0x7f070031;
         public static final int showCustom=0x7f07000b;
         public static final int showHome=0x7f070008;
@@ -1348,12 +1349,14 @@ containing a value of this type.
         public static final int activity_open_camera=0x7f03001c;
         public static final int activity_open_profile=0x7f03001d;
         public static final int activity_setting=0x7f03001e;
-        public static final int fragment_friends=0x7f03001f;
-        public static final int fragment_my_gallery=0x7f030020;
-        public static final int fragment_open_profile_dummy=0x7f030021;
-        public static final int fragment_settings=0x7f030022;
-        public static final int layout_fullscreen_image=0x7f030023;
-        public static final int support_simple_spinner_dropdown_item=0x7f030024;
+        public static final int activity_test_camera=0x7f03001f;
+        public static final int fragment_friends=0x7f030020;
+        public static final int fragment_my_gallery=0x7f030021;
+        public static final int fragment_open_profile_dummy=0x7f030022;
+        public static final int fragment_settings=0x7f030023;
+        public static final int fragment_test_camera=0x7f030024;
+        public static final int layout_fullscreen_image=0x7f030025;
+        public static final int support_simple_spinner_dropdown_item=0x7f030026;
     }
     public static final class menu {
         public static final int display_gallery=0x7f0d0000;
@@ -1365,6 +1368,7 @@ containing a value of this type.
         public static final int open_camera=0x7f0d0006;
         public static final int open_profile=0x7f0d0007;
         public static final int setting=0x7f0d0008;
+        public static final int test_camera=0x7f0d0009;
     }
     public static final class string {
         public static final int Camera_Button=0x7f08002a;
@@ -1417,13 +1421,13 @@ containing a value of this type.
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f080025;
         public static final int action_check_update=0x7f080038;
-        public static final int action_forgot_password=0x7f080044;
+        public static final int action_forgot_password=0x7f080045;
         public static final int action_help=0x7f080037;
         public static final int action_refresh=0x7f080036;
         public static final int action_search=0x7f080035;
         public static final int action_settings=0x7f080028;
-        public static final int action_sign_in_register=0x7f080042;
-        public static final int action_sign_in_short=0x7f080043;
+        public static final int action_sign_in_register=0x7f080043;
+        public static final int action_sign_in_short=0x7f080044;
         public static final int app_name=0x7f080027;
         /**   Title for notification shown when GooglePlayServices needs to be
         enabled for a application to work. [CHAR LIMIT=70] 
@@ -1519,25 +1523,26 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f080013;
-        public static final int error_field_required=0x7f080049;
-        public static final int error_incorrect_password=0x7f080048;
-        public static final int error_invalid_email=0x7f080046;
-        public static final int error_invalid_password=0x7f080047;
+        public static final int error_field_required=0x7f08004a;
+        public static final int error_incorrect_password=0x7f080049;
+        public static final int error_invalid_email=0x7f080047;
+        public static final int error_invalid_password=0x7f080048;
         public static final int hello_world=0x7f080029;
-        public static final int login_progress_signing_in=0x7f080045;
+        public static final int login_progress_signing_in=0x7f080046;
         public static final int profile=0x7f080039;
         /**  Strings related to login 
          */
-        public static final int prompt_email=0x7f080040;
-        public static final int prompt_password=0x7f080041;
+        public static final int prompt_email=0x7f080041;
+        public static final int prompt_password=0x7f080042;
         public static final int title_activity_display_gallery=0x7f08002e;
         public static final int title_activity_display_map=0x7f08002f;
         public static final int title_activity_full_screen=0x7f080032;
-        public static final int title_activity_login=0x7f08003f;
+        public static final int title_activity_login=0x7f080040;
         public static final int title_activity_my_gallery_fragment=0x7f08003e;
         public static final int title_activity_open_camera=0x7f080031;
         public static final int title_activity_open_profile=0x7f08003a;
         public static final int title_activity_setting=0x7f080030;
+        public static final int title_activity_test_camera=0x7f08003f;
     }
     public static final class style {
         /** 

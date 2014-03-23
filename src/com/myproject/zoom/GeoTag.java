@@ -8,11 +8,27 @@ import android.media.ExifInterface;
 
 public class GeoTag {
 
-	public double latitude;
-	public double longitude;
-	public double latitude_ref;
-	public double longitude_ref;
+	private double latitude;
+	private double longitude;
+	private double latitude_ref;
+	private double longitude_ref;
 	
+	public double getLatitude() {
+		return latitude;
+	}
+
+	public double getLongitude() {
+		return longitude;
+	}
+
+	public double getLatitude_ref() {
+		return latitude_ref;
+	}
+
+	public double getLongitude_ref() {
+		return longitude_ref;
+	}
+
 	public int ConvertCoordinate1 (double Coordinate){
 		int num1 = (int)Math.floor(Coordinate);	
 		
@@ -53,7 +69,7 @@ public class GeoTag {
 		return WE; 
 	}
 	//filePath should be the absolute path, canonical path?
-    public void SetGeoTag(String filePath, double latitude, double longitude){
+    public static void SetGeoTag(String filePath, double latitude, double longitude){
     	
     	try {
     		//http://stackoverflow.com/questions/8807799/android-find-the-orientation-of-photo-was-took-by-camera
@@ -82,9 +98,9 @@ public class GeoTag {
 		        }
 
 		        if (longitude > 0) {
-		            exif.setAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF, "E");    
+		            exif.setAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF, "W");    
 		        } else {
-		        	exif.setAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF, "W");
+		        	exif.setAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF, "E");
 		        }
 		      
 		        exif.saveAttributes();

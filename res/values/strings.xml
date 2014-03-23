@@ -25,5 +25,6 @@
     <string name="MyFriends">Friends</string>
     <string name="Settings">Setting</string>
     <string name="title_activity_my_gallery_fragment">MyGalleryFragment</string>
+    <string name="title_activity_test_camera">TestCamera</string>
 
 </resources>

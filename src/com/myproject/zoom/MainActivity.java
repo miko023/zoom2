@@ -105,5 +105,11 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this,OpenProfile.class);
 		startActivity(intent);
 	}
+	
+	public void TestCamera(View view){
+		Intent intent = new Intent(this,TestCamera.class);
+		startActivity(intent);
+		
+	}
 
 }

@@ -2,6 +2,8 @@ package com.myproject.zoom;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.myproject.zoom.GeoTag;
 import com.myproject.zoom.PagerContainer;
@@ -48,6 +50,9 @@ public class DisplayMap extends Activity {
 	
 	private PagerContainer mContainer; 
 	
+	private List <LatLng> latlnglist = new ArrayList<LatLng>(); 
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -77,9 +82,19 @@ public class DisplayMap extends Activity {
 			e.printStackTrace();
 		}
 		geotag.ReadGeoTag(filearr[i]);
+		latlnglist.add(new LatLng(geotag.getLatitude(),geotag.getLongitude()));
+		System.out.println("GEOTAG"+ geotag.getLatitude());
 		}
 		
-		newMarker = new LatLng(geotag.latitude,geotag.longitude);
+		for(int i=0; i<latlnglist.size(); i++){
+			MarkerOptions marker = new MarkerOptions().position(new LatLng(latlnglist.get(i).latitude,latlnglist.get(i).longitude));
+			googleMap.addMarker(marker);
+			System.out.println("LATLNGSTUFF");
+			System.out.println(latlnglist.get(i).latitude +",,,,,"+ latlnglist.get(i).latitude);
+		}
+		
+		
+		newMarker = new LatLng(geotag.getLatitude(),geotag.getLongitude());
 		
 		// create marker
 		//MarkerOptions marker = new MarkerOptions().position(new LatLng(LOCATION_VANCOUVER.latitude,LOCATION_VANCOUVER.longitude)).title("Vancouver");
