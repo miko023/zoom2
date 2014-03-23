@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/Gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Map"
+        android:layout_alignBottom="@+id/Map"
+        android:layout_toRightOf="@+id/Setting"
+        android:text="@string/Gallery_Button"
+        android:onClick="DisplayGallery" />
+
+    <Button
+        android:id="@+id/Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Map"
+        android:layout_below="@+id/Map"
+        android:layout_marginTop="30dp"
+        android:text="@string/Setting_Button"
+        android:onClick="OpenSetting" />
+
+    <Button
+        android:id="@+id/Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Setting"
+        android:layout_alignBottom="@+id/Setting"
+        android:layout_alignLeft="@+id/Gallery"
+        android:layout_marginLeft="14dp"
+        android:text="@string/Camera_Button"
+        android:onClick="OpenCamera" />
+
+    <Button
+        android:id="@+id/Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/Map_Button" 
+        android:onClick="DisplayMap"/>
+
+    <TextView
+        android:id="@+id/Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Map"
+        android:layout_below="@+id/Setting"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="84dp"/>
+
+    <TextView
+        android:id="@+id/Longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Latitude"
+        android:layout_below="@+id/Latitude"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/profile_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Latitude"
+        android:layout_marginTop="24dp"
+        android:text="@string/profile"
+        android:onClick="OpenProfile" />
+
+</RelativeLayout>
