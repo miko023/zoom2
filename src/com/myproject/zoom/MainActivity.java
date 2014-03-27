@@ -82,7 +82,7 @@ public class MainActivity extends Activity {
 	}
 		
 	public void DisplayGallery(View view){
-		Intent intent = new Intent (this,DisplayGallery.class);
+		Intent intent = new Intent (this,GridViewActivity.class);
 		startActivity(intent);
 	}	
 	

@@ -48,18 +48,25 @@ public class FullScreenImageAdapter extends PagerAdapter {
  
         inflater = (LayoutInflater) _activity
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View viewLayout = inflater.inflate(R.layout.activity_full_screen, container,
+        View viewLayout = inflater.inflate(R.layout.layout_fullscreen_image, container,
                 false);
  
         imgDisplay = (TouchImageView) viewLayout.findViewById(R.id.imgDisplay);
-        
+        btnClose = (Button) viewLayout.findViewById(R.id.btnClose);
         
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inPreferredConfig = Bitmap.Config.ARGB_8888;
         Bitmap bitmap = BitmapFactory.decodeFile(_imagePaths.get(position), options);
         imgDisplay.setImageBitmap(bitmap);
         
-        
+        // close button click event
+        btnClose.setOnClickListener(new View.OnClickListener() {			
+			@Override
+			public void onClick(View v) {
+				_activity.finish();
+			}
+		}); 
+
         ((ViewPager) container).addView(viewLayout);
  
         return viewLayout;

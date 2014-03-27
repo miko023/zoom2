@@ -1,13 +1,11 @@
 package com.myproject.zoom.adapter;
 
-import com.myproject.zoom.FullScreen;
+import com.myproject.zoom.FullScreenViewActivity;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-
-import com.myproject.zoom.FullScreen;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -85,7 +83,7 @@ public class GridViewImageAdapter extends BaseAdapter {
 		public void onClick(View v) {
 			// on selecting grid view image
 			// launch full screen activity
-			Intent i = new Intent(_activity, FullScreen.class);
+			Intent i = new Intent(_activity, FullScreenViewActivity.class);
 			i.putExtra("position", _postion);
 			_activity.startActivity(i);
 		}

@@ -29,5 +29,7 @@
     <string name="Add_Description">Write a Description</string>
     <string name="save_photo">Save Photo</string>
     <string name="title_activity_gallery_test">GalleryTest</string>
+    <string name="title_activity_full_screen_view">FullScreenViewActivity</string>
+    <string name="title_activity_grid_view">GridViewActivity</string>
 
 </resources>

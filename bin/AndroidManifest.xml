@@ -118,6 +118,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.myproject.zoom.MainActivity" />
         </activity>
+        <activity
+            android:name="com.myproject.zoom.FullScreenViewActivity"
+            android:label="@string/title_activity_full_screen_view"
+            android:parentActivityName="com.myproject.zoom.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myproject.zoom.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.myproject.zoom.GridViewActivity"
+            android:label="@string/title_activity_grid_view"
+            android:parentActivityName="com.myproject.zoom.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myproject.zoom.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
