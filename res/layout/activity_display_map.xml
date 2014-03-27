@@ -14,16 +14,17 @@
         android:layout_width="match_parent"
         android:layout_height="400dp" />
 	
- 	<com.myproject.zoom.PagerContainer
-        android:id="@+id/pager_container"
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Map"
-        android:background="#000000">
-    <android.support.v4.view.ViewPager
-        android:layout_width="150dp"
-        android:layout_height="100dp"/>
-    	
-        </com.myproject.zoom.PagerContainer> 
+        android:layout_marginTop="4dp" >
+        <LinearLayout
+            android:id="@+id/mygallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            />
+    </HorizontalScrollView>
 
 </RelativeLayout>

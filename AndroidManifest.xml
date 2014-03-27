@@ -110,6 +110,14 @@
             android:name="com.myproject.zoom.TestCamera"
             android:label="@string/title_activity_test_camera" >
         </activity>
+        <activity
+            android:name="com.myproject.zoom.GalleryTest"
+            android:label="@string/title_activity_gallery_test"
+            android:parentActivityName="com.myproject.zoom.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myproject.zoom.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

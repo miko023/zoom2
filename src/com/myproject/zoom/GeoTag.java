@@ -103,6 +103,7 @@ public class GeoTag {
 		        	exif.setAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF, "E");
 		        }
 		      
+		        
 		        exif.saveAttributes();
 		        
 		        System.out.println(exif.getAttribute(ExifInterface.TAG_GPS_LATITUDE));
